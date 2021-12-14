@@ -1,3 +1,13 @@
+cd e:/  
+cd learing
+git status  查询
+git add .   // 把所有变更暂存
+git commit -m "描述"  // 提交暂存
+git push // 推送到远程仓库
+
+
+
+
 style	样式
 
 color	字体颜色
