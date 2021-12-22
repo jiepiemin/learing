@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*img {
+  				opacity: 0.5;
+			}
+
+			img:hover {
+  				opacity: 1.0;
+			}*/
+			.shadow{
+				width:100px;	}
+				.red {
+					background: red;
+				}
+				/*ul.box {
+					background: yellow;
+				}*/
+				/*.box li span {background: yellow;}*/
+				/*.box li:nth-child(4){
+					background: yellow;
+				}*/
+				/*.box li {
+					background: red;
+				}
+				.box li:nth-of-type(1) {
+					background: yellow;
+				}*/
+				/*ul li,ol li,.test,#demo {
+					font-size: 16px;
+				}*/
+				/*
+				 *
+				 * 交集选择器  标签.class类   p.box 所有 class类为box的p标签
+				 * 并集选择器  ,
+				 * 子集选择器  > 可以省略
+				 * 伪类选择器  （last-child first-child nth-child() nth-of-type() ::after  ::before
+				 * 兄弟相邻选择器 +
+				 * 
+				 * :link表示鼠标点击之前，也称为原始状态
+				 * :hover表示鼠标悬停状态
+				 * :active表示鼠标点击状态
+				 * :visited表示鼠标点击之后状态
+				 * 
+				 * text-shadow 文字阴影
+				 * box-shadow 盒子阴影
+				 * 
+				 * opacity:0-1   和我们display: none 的区别是占位与不占位 (背景透明)
+				 * 颜色属性设置为rgba可以实现文字透明当然也可以实现背景透明
+				 * 
+				 * */
+				/*.box p:nth-child(3) {
+					background: pink;
+				}*/
+				.box li span:after {
+					content: '内容';
+					font-size: 16px;
+					background: red;
+					width: 50px;
+					height: 50px;
+					text-align: center;
+					line-height: 50px;
+					margin-left: 15px;
+				} 
+				.box .test + p {
+					background: pink;
+				}
+				.a_box {
+					height: 100px;
+					width: 200px;
+					margin: 0 auto;
+					border: 1px solid;
+				}
+				.a_box a {
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
+				.a_box .a:active{
+					color: orange;
+				}
+				body .a_box .a:hover{
+					color: yellow;
+				}
+				.a_box .a:focus{
+					color: green;
+				}
+				.a_box .a:visited{
+					color: gray;
+				}
+				.a_box .a:link {
+					color: red;
+				}
+				.box_shwDow {
+					width: 100px;
+					height: 100px;
+					background: pink;
+					/*border: 1px solid;*/
+					box-shadow: 50px 50px 10px 0px #ff9900, -50px 50px 40px 0px #00ff00 // 盒子阴影
+				}
+				.text_shwdow {
+					text-align: center;
+					margin: 100px auto;
+					font-family: "Comic Sans MS";
+					font-size: 80px;
+					color: white;
+					text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+					}
+					.opacity {
+						background: rgba(0, 0, 0, 0.6);
+						/*color: rgba(255, 255, 255, 0.8);*/
+						/*opacity: 0.2;*/
+						
+						/*display: none;*/
+					}
+				
+		</style>
+	</head>
+	<body>
+		<img src="../day1/images/111.jpeg" />
+		<div class="shadow">
+			<p></p>
+		</div>
+		<ul class="box">
+			<p>第一行</p>
+			<li>
+				<span>23123</span>
+			</li>
+			<p>123123</p>
+			<li>
+				<span>参照span</span>
+			</li>
+			<li class="test">
+				<a href="">我是第三个li</a>
+			</li>
+			<p>123123</p>
+			<li>
+				<a href="">我是第四个li</a>
+			</li>
+			<p>123123</p>
+			<li>
+				<span>123</span>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<i class="red">对比i</i>
+			</li>
+		</ul>
+		<div class="a_box">
+			<a href="https://www.baidu.com" class="a">百度</a>
+			<a href="#">点击</a>
+		</div>
+		<div>
+			<div class="box_shwDow">盒子阴影</div>
+			<p class="text_shwdow">文字阴影</p>
+			<p class="opacity">文字透明</p>
+		</div>
+		
+	</body>
+</html>

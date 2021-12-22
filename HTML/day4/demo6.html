@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.box{
+			width:300px;
+			height:200px;
+			background:red;
+			position:relative;
+		}
+		.child{
+			width:50px;
+			height:50px;
+			background:pink;
+		}
+		/*方法1*/
+		/*.child{
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top:-25px;
+			margin-left:-25px;
+		}*/
+		/*方法2*/
+		/*.child{
+			position:absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			margin:auto;
+		}*/
+		/*方法3*/
+		/*.child{
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%)
+		}*/
+		/*方法4*/
+		.box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+	</style>
+	<body>
+		<div class="box">
+			<div class="child">
+				我是居中元素1						
+			</div>
+		</div>
+	</body>
+</html>

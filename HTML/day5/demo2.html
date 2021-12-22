@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<style>
+		*{
+			margin:0;
+			padding:0;	
+		}
+		a{
+			text-decoration:none;
+		}
+		ul li,ol li{
+			list-style:none;
+		}
+		.main{
+			width:996px;
+			margin:0 auto;
+			position:relative;
+		}
+		.header{
+			height:114px;
+		}
+		.header ul li{
+			font-size:12px;
+			line-height:40px;
+			margin:37px 10px;
+			float:right;
+		}
+		.header ul li:hover{
+			color:#858585;
+			border-top:2px solid #858585;
+		}
+		.header img{
+			float:left;
+			margin-top:37px;
+		}
+		.banner{
+			height:468px;
+			background:#ebebeb;
+		}
+		.news{
+			height:380px;
+		}
+		.news1{
+			width:290px;
+			height:302px;
+		}
+		/*单行溢出内容显示省略号*/
+		 /*规定段落中的文本不进行换行：*/
+            /*white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;/* text-overflow属性表示规定当文本溢出包含元素时发生的事情;ellipsis表示显示省略符号来代表被修剪的文本。*/*/
+           
+		/*多行溢出内容显示省略号*/
+		.box1 img{
+			margin:26px auto;
+		}
+		???/*代码样式未添加成功？*/
+		.box1 p:first-child{
+			font-size:18px;
+			text-align:center;
+			color:#967777;
+		}
+		.box1 p:nth-of-type(2){
+			font-size:12px;
+			color:#8d8d8d;
+			line-height:24px;			
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+            -webkit-line-clamp: 3; /*限制文本的行数，只显示3行*/
+            -webkit-box-orient: vertical;/*设置或检索伸缩盒对象的子元素的排列方式 */
+		}
+		.content{
+			height:714px;
+		}
+		.nav{
+			height:232px;
+		}
+		.fotter{
+			height:40px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="main">
+				<img src="images/images/1_03.png" />
+				<ul style="overflow: hidden;">
+					<li>联系我们</li>
+					<li>服务支持</li>
+					<li>合作伙伴</li>
+					<li>工程案例</li>
+					<li>产品世界</li>
+					<li>公司观点</li>
+					<li>关于我们</li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="images/images/2_02.png" />
+		</div>
+		<div class="news">
+			<div class="main">
+				<div class="news1 box1">
+					<img src="images/images/3_03.png" />
+					<p>企业新闻/NEWS</p>
+					<P>1990年10月设立工厂以来，二十多年的发展岁月中坚持向客户供应优质的管材，与客户共进退、共谋发展的企业，爱康管材的品质已经取得</P>
+				</div>
+			</div>
+		</div>
+		<div class="content"></div>
+		<div style="height:26px;"></div>
+		<div class="nav"></div>
+		<div class="fotter"></div>		
+	</body>
+</html>

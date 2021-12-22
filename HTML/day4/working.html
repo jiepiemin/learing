@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			ul li,ol li {
+				list-style: none;
+			}
+			li{
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+				color:#CD0200;
+			}
+			.fl{
+				float: left;
+			}
+			.fr {
+				float: right;
+			}
+			.main ul li:hover {
+				color: red;
+				border-bottom:2px solid #D64F56;
+			}
+			.main {
+				width: 1000px;
+				margin: 0 auto;
+				color: #333333;
+				font-size: 14px;
+				position:relative;
+				
+			}
+			/*header start*/
+			.header {
+				background: #e4e4e4;
+				overflow: hidden;
+				width: 100%;
+				line-height: 36px;
+				height: 36px;
+			}
+			.head_l ul li {
+				float: left;
+				margin: 0 10px;
+	
+			}
+			.head_r ul li {
+				float: left;
+				margin-left: 22px;
+			}
+			.head_r ul li input {
+				border: 0;
+				padding-left: 5px;
+				height: 20px;
+				line-height: 20px;
+			}
+			.head_r ul li  input::-webkit-input-placeholder {
+				color: #cacaca;
+				
+			}
+			/*header end*/
+			 
+			/*nav start*/
+			.nav {
+				height: 44px;
+				line-height: 44px;
+				background: #d92b34;
+			}
+			.nav ul {
+				padding-left: 8px;
+				background: #c8141e;
+				overflow: hidden;
+				font-size: 16px;
+				color: #FFFFFF;
+			}
+			.nav ul li {
+				float: left;
+				padding: 0 18px;								
+			}
+			.nav ul li:last-child {
+				margin: 0;
+			}
+			
+			.nav ul li:hover {
+				background: #FAFAFA;
+				color: black;			
+			}
+		/*nav end*/
+		/*banner start*/
+			.banner{
+				height:375px;
+			}	
+			.box1{
+				position:relative;
+			}		
+			.ear{
+				width:30px;
+				height:50px;
+				background:#383E33;				
+				color:white;
+				line-height:50px;
+				text-align:center;				
+			}
+			.ear-l{
+				position:absolute;
+				top:163px;				
+				left:0;
+			}
+			.ear-r{
+				position:absolute;
+				top:163px;
+				right:0;
+			}
+		/*banner end*/
+			
+		/*content*/	
+			.content1{
+				width:268px;
+				height:290px;
+			}
+			.news1{
+				height:101px;
+								
+			}
+			.news1 ul li{
+				float:left;
+				font-size:16px;
+				line-height:40px;				
+				margin:40px 20px 0 0;				
+			}
+			.border1{
+				height:80px;
+				text-align:center;
+				border-bottom:2px solid #CCCCCC;
+			}
+			
+			h4{
+				text-align:center;
+			}
+			.content1 ol li{
+				width:9px;
+				height:9px;
+				border-radius:4.5px;
+				background:#B2B2B2;
+				float:left;				
+			}
+			.content2{
+				width:426px;
+				height:290px;
+				position:absolute;
+				left:308px;
+				top:0;
+			}
+			.content2 ul li a{
+				
+			}
+			.neirong{
+				width:461px;
+				height:193px;
+				font-size:12px;
+				line-height:24px;
+			}
+			.content3{
+				position:absolute;
+				left:761px;
+				top:40px;
+			}
+			.content4{
+				width:268px;
+				height:290px;
+				position:absolute;
+				top:295px;
+				left:0;
+			}
+			.content4 ol li{
+				width:9px;
+				height:9px;
+				border-radius:4.5px;
+				background:#B2B2B2;
+				float:left;				
+			}					
+			.content3{
+				position:absolute;
+				left:761px;
+			}
+			
+			.content5{
+				width:426px;
+				height:290px;
+				position:absolute;
+				top:295px;
+				left:308px;
+			}
+			.content{
+				height:562px;
+				border-bottom:4px solid #FFB540;
+			}
+			.content7{				
+				height:44px;
+				background:#D4D4D4;
+				position:relative;
+			}
+			.content7 ul li{
+				float:left;				
+				font-size:14px;
+				line-height:44px;	
+			}
+			/*content end*/
+			
+			/*fotter start*/
+			.fotter{
+				height:240px;
+				background:#302728;
+			}
+			.fotter p{
+				height:46px;				
+				color:white;
+				font-size:14px;
+				line-height:46px;
+				border-bottom:1px solid #3E3637;
+				padding:0 160px 0 70px;
+				overflow:hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap;
+			}
+			.content6{
+				width:206px;
+				height:131px;
+				background:;
+				margin:44px 22px 40px 14px;
+				position:absolute;
+				top:347px;
+				left:761px;
+				float:left;				
+			}
+			.content6 p{
+				margin: 10px auto;
+			}
+			.jpg1{
+				width:38px;
+				height:30px;
+				background:url(images/jp.png)no-repeat -20px -10px;				
+			}
+			.jpg2{
+				width:38px;
+				height:30px;				
+				background:url(images/jp.png)no-repeat -82px -10px;				
+			}
+			.jpg3{
+				width:38px;
+				height:30px;
+				background:url(images/jp.png)no-repeat -20px -52px;				
+			}
+			.jpg4{
+				width:38px;
+				height:30px;
+				background:url(images/jp.png)no-repeat -20px -90px;				
+			}
+			.jpg5{
+				width:38px;
+				height:30px;
+				background:url(images/jp.png)no-repeat -82px -90px;				
+			}
+			.jpg6{
+				width:38px;
+				height:30px;
+				background:url(images/jp.png)no-repeat -148px -90px;				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<div class="main">
+					<div class="head_l fl">
+						<ul>
+							<li>在校学生</li>
+							<li>教职员工</li>
+							<li>教职员工</li>
+							<li>教职员工</li>
+							<li>教职员工</li>
+						</ul>
+					</div>
+					<div class="head_r fr">
+						<ul>
+							<li>怀念旧版</li>
+							<li>English</li>
+							<li><input placeholder="请输入关键期" type="text"/> </li>
+							<i><img src="images/images/01_03.png";/></i>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="logo">
+				<div class="main"><img src="images/1.png"></div>
+			</div>					
+			<div class="nav">
+				<div class="main">
+					<ul>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>建桥概览</li>
+						<li>校友会</li>
+						<li>荣誉榜</li>
+						<li>建桥概览</li>
+					</ul>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="main box1">
+					<img src="images/2.png" />
+					<div class="ear ear-l"><</div>
+					<div class="ear ear-r">></div>
+					
+				</div>
+			</div>
+			<div class="content">
+				<div class="main">
+					<div class="content1">						
+						<div class="news1">
+							<div class="border1">
+								<ul>
+									<li>图片</li>
+									<li>视频</li>
+									<li>人物</li>
+								</ul>
+							</div>
+						</div>						
+						<img src="images/4_03.png"/>
+		   				<h4>图说建桥索引链接</h4>
+		   				
+						<ol>
+							<li style="margin:11px 10px 16px 101px;background:#C8141E;"></li>
+							<li style="margin:11px 10px 16px 0;"></li>
+							<li style="margin:11px 10px 16px 0;"></li>
+							<li style="margin:11px 101px 16px 0;"></li>
+						</ol>
+					</div>
+					<div class="content2">
+						<div class="news1">
+							<div class="border1">
+								<ul>
+									<li>快讯</li>
+									<li>院部动态</li>
+									<li>媒体关注</li>									
+								</ul>
+								<ul>
+									<li style="float:right;"><a href="https://www.gench.edu.cn;"><<建桥新闻网</a></li>
+								<ul>
+							</div>
+							<div class="neirong">
+								<ol>							
+								    <li  style="margin-top:20px;">	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>东方教育时报:以折叠的身体战胜坎坷与崎岖</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>东方教育时报:以折叠的身体战胜坎坷与崎岖</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+									<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+									<span style="margin:0 0 0 23px;">11-17</span>
+								    </li>
+								    <li>	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								</ol>						
+							</div>	
+						</div>
+					</div>
+					<div class="content3">
+						<img src="images/3_03.png"/>
+					</div>
+					<div class="content4">
+						<div class="news1">
+							<div class="border1">
+								<ul>
+									<li>讲座报告</li>
+									<li>校园活动</li>
+									<li>学校日历</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div style="width:57px;" class="fl">
+									<span>
+										<h5>2021</h5>
+										<h6>12-14</h6>
+									</span>
+								</div>
+								<div style="width:210px;text-align:left;" class="fl">
+									<span>
+										<h4 style="text-align: left";>阮鹏</h4>
+										<h5>图书馆满意度调查座谈会</h5>
+										<p>学生事务中心315</p>
+									</span>							
+								</div>							
+							</div>
+							<div>
+								<div style="width:57px;" class="fl">
+									<span>
+										<h5>2021</h5>
+										<h6>12-08</h6>
+									</span>
+								</div>
+								<div style="width:210px;" class="fl">
+									<span>
+										<h4 style="text-align: left";>田建国(教授)</h4>
+										<h5>盐野上生在中国的翻译与传播</h5>
+										<p>二教404</p>						
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<ol>
+							<li style="margin:11px 10px 16px 101px;background:#C8141E;"></li>
+							<li style="margin:11px 10px 16px 0;"></li>
+							<li style="margin:11px 10px 16px 0;"></li>							
+						</ol>
+						
+					</div>
+					<div class="content5">
+						<div class="news1">
+							<div class="border1">
+								<ul>
+									<li>快讯</li>
+									<li>院部动态</li>
+									<li>媒体关注</li>
+								</ul>
+							</div>
+							<div class="neirong">
+								<ol>							
+								    <li style="margin-top:20px;">	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>东方教育时报:以折叠的身体战胜坎坷与崎岖</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>东方教育时报:以折叠的身体战胜坎坷与崎岖</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								    <li>	
+									<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+									<span style="margin:0 0 0 23px;">11-17</span>
+								    </li>
+								    <li>	
+										<span>上海宣传通讯[思政教育]:用好红色场馆资源</span>
+										<span style="margin:0 0 0 23px;">11-17</span>														
+								    </li>
+								</ol>						
+							</div>	
+						</div>
+					</div>
+					<div class="content6">
+						<div class="fl" style="margin:0 40px 0 0;">
+							<div class="jpg1"></div>
+							<p style="font-size:11px;width:40px;">招生网</p>
+						</div>
+						<div class="fl" style="margin:0 28px 0 0;">
+							<div class="jpg2"></div>
+							<p style="font-size:11px;width:40px;">公众号</p>
+						</div>
+						<div class="fl">
+							<div class="jpg3"></div>
+							<p style="font-size:11px;width:50px;">校长信箱</p>
+						</div>
+						<div class="fl" style="margin:0 30px 0 0;">
+							<div class="jpg4"></div>
+							<p style="font-size:11px;width:50px;">信息门户</p>
+						</div>
+						<div class="fl" style="margin:0 20px 0 0;">
+							<div class="jpg5"></div>
+							<p style="font-size:11px;width:50px;">建桥小屋</p>
+						</div>
+						<div class="fl">
+							<div class="jpg6"></div>
+							<p style="font-size:11px;width:50px;">邮箱登录</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div style="height:22px;background:#EBEBEB;"></div>	
+			<div class="content7">
+				<div class="main">
+					<ul>
+						<li style="position:absolute;left:68px;">友情链接</li>
+						<li style="position:absolute;left:277px;">合作院校</li>
+						<li style="position:absolute;left:458px;">产学合作单位</li>
+						<li style="position:absolute;left:655px;">相关链接</li>
+						<li style="position:absolute;right:85px;">实用链接</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fotter">
+				<div class="main">
+					<div>
+					<p>教育部 &Iota; 上海市教育委员会 &Iota; 上海建桥集团 &Iota; 西南片高校联合办学 &Iota; 应用技术大学（学院）联盟 &Iota; 中国（上海）自贸试验区自我发现</p>
+					</div>
+					<div style="margin-top:22px;">
+						<div style="float:left;margin-right:22px;">
+						<img src="images/images/8_03.png"/>
+						</div>
+						<div style="float:left;color:#959292;">							
+							<li>上海建桥大学有限责任公司</li>
+							<li>学校地址：上海市浦东新区沪城环路1111号   邮编：201306  电子邮箱：SJQU@gench.edu.cn</li>
+							<li>电话：021-58137788（学校办公室） 021-58137880 （招生办公室）</li>
+							<li>沪ICP备11023366号-2 <img src="images/images/11_03.png"/>沪公网安备31011502006292</li>							
+						</div>
+						<div style="float:right;">
+							<img src="images/images/9_03.png" />
+						</div>						
+					</div>
+					<div>
+						<img src="images/images/10_03.png" />
+					</div>
+				</div>
+					
+				
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,18 @@
+opacity 透明度（0.0-1.0；值越低，越透明）。
+opacity 属性通常与 :hover 选择器一同使用，这样就可以在鼠标悬停时更改不透明度。
+交集选择器  标签.class类   p.box 所有 class类为box的p标签
+ * 并集选择器  ,
+ * 子集选择器  > 可以省略
+ * 伪类选择器  （last-child first-child nth-child() nth-of-type() ::after  ::before
+ * 兄弟相邻选择器 +
+* 
+ * :link表示鼠标点击之前，也称为原始状态
+ * :hover表示鼠标悬停状态
+ * :active表示鼠标点击状态
+ * :visited表示鼠标点击之后状态
+* 
+ * text-shadow 文字阴影
+ * box-shadow 盒子阴影
+* 
+ * opacity:0-1   和我们display: none 的区别是占位与不占位 (背景透明)
+ * 颜色属性设置为rgba可以实现文字透明当然也可以实现背景透明

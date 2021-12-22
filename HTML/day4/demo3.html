@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box-opacity{
+				width:100px;
+				height:100px;
+				background:red;					
+				opacity:0.6;			
+			}
+			.text-opacity {
+				font-size:18px;
+				text-align:center;
+				line-height:100px;
+				opacity:0.4;
+			}	
+			.box-shadow{
+				width:100px;
+				height:100px;
+				background:yellow;
+				box-shadow:10px 10px 5px 2px pink ;
+			}	
+			.text-shadow{
+				font-size:18px;
+				line-height:100px;
+				text-align:center;
+				text-shadow:10px 10px 2px gray;
+			}	
+			/*并集选择器*/
+			.text ul li,ol li{
+				list-style-type:none;
+				color:orange;
+			}
+			/*交集选择器*/
+			p.text{
+				background:yellow;
+			}
+			/*后代选择器*/
+			
+		</style>
+	</head>
+	<body>
+		<div class="box-opacity">
+			<p class="text-opacity">文字透明</p>			
+		</div>
+		<div class="box-shadow">
+			<p class="text-shadow">文字阴影</p>
+		</div>
+		<div class="text">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<p class="text">123</p>
+				<a href="https://www.baidu.com/">百度</a>
+			</ul>
+			<ol>
+				<li>c</li>
+				<li>d</li>
+				<p>456</p>
+			</ol>
+		</div>
+	</body>
+</html>
