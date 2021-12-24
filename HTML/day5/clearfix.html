@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.content {
+				border: 2px solid red;
+			}
+			.fl {
+				float: left;
+			}
+			.fr {
+				float: right;
+			}
+			.box1 {
+				width: 100px;
+				height: 150px;
+				background: pink;
+			}
+			.box2 {
+				width: 120px;
+				height: 180px;
+				background: yellow;
+			}
+			.box3 {
+				width: 300px;
+				height: 100px;
+				background: green;
+			}
+			.clearFix:after {
+				height:0;
+				clear:both;
+				content:'';
+				display:block;
+				Visibility:hidden;
+			}
+			.clearFix {
+				*zoom: 1; // 可写可不写
+			}
+		</style>
+	</head>
+	<body>
+		<!--清除浮动-->
+		<!--/*
+		 * 1. 给父元素添加overflow:hidden;  缺点：触发BFC机制 不推荐。优点：代码简单简易方便可做调试使用
+		 * 2.3 一致。原理：给最后一个浮动元素后面添加一个标签闭合浮动：
+		 * clearfix:affter {height:0; clear:all; visibility: hidden; display:block; content:''}
+		 * 4.   .clearfix:after,.clearfix:before{
+			        content: "";
+			        display: table;
+			    }
+			    .clearfix:after{
+			        clear: both;
+			    }
+			    .clearfix{
+			        *zoom: 1;
+			    }
+		 */-->
+		<div class="content clearFix">
+			<div class="box1 fl">box1</div>
+			<div class="box2 fl">box2</div>
+			<div class="box3 fr">box3</div>
+		</div>
+	</body>
+</html>

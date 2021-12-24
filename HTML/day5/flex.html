@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/reset.css" type="text/css">
+		<style>
+			/*（父元素声明）
+			 *display:flex: 弹性盒子
+			 *flex-direction 声明伸缩流方向 属性有：column 垂直（Y ⬇）column-reverse 垂直从下到上（Y ⬆） row 默认值（X →） row-reverse (X ←)
+			 * flex-wrap 声明伸缩流方向是否换行 wrap 换行 nowrap 不换行 wrap-reverse 反方向换行
+			 * justify-content 声明水平方向位置摆放 center居中 start：从起点开始； end：终点开始： space-around :每个弹性元素左右间距一制， space-between
+			 * align-items 声明垂直方向位置摆放 center 居中 start end
+			 * align-content 多轴线的交叉轴摆放位置 属性值与justify-content属性值一致 (可以理解为换行后生效)
+			 * 
+			 *（弹性子元素声明）
+			 * order 属性为数值 值越小越靠前
+			 * 
+			 */
+			
+			.box {
+				display: flex;
+				flex-wrap: wrap;  
+				width: 350px;
+				height: 500px;
+				margin: 0 auto; 
+				justify-content: space-around;
+				align-content: space-evenly;
+			}
+			.child {
+				margin: 16px;
+			  padding: 4px; 
+			  background-color: #e7e7e7;
+			  width: 104px;
+			  height: 104px;
+				  object-fit: contain;
+				box-shadow:
+				    inset 0 5px white, 
+				    inset 0 -5px #bbb,
+				    inset 5px 0 #d7d7d7, 
+				    inset -5px 0 #d7d7d7;
+				  
+			  border-radius: 10%;
+			}
+			.round {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: black;
+			}
+			.child1 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.child2 {
+				display: flex;				
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.child2-box2{
+				display:flex;
+				justify-content:end;
+			}
+			.child3 {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			.child3_box1 {
+				display: flex;
+				
+			}
+			.child3_box2 {
+				display: flex;
+				justify-content: center;
+			}
+			.child3_box3 {
+				display: flex;
+				justify-content: flex-end;
+			}
+			.child4{
+				display:flex;
+				flex-direction:column;
+				justify-content:space-between;
+			}
+			.child4-box1{
+				display:flex;
+				flex-direction:row;
+				justify-content:inherit;
+			}
+			.child4-box2{
+				display:flex;
+				flex-direction:row;
+				justify-content:inherit;
+			}
+			.child5{
+				display:flex;
+				flex-direction:column;
+				justify-content:space-between;
+				
+			}
+			.child5-box1{
+				display:flex;
+				flex-direction:row;
+				justify-content:space-between;
+			}
+			.child5-box2{
+				display:flex;
+				justify-content:center;				
+			}
+			.child5-box3{
+				display:flex;
+				flex-direction:row;
+				justify-content:space-between;
+			}
+			.child6{
+				display:flex;
+				flex-direction:column;
+				justify-content:space-between;
+			}
+			.child6-box1{
+				display:flex;
+				flex-direction:row;
+				justify-content:space-around;
+			}
+			.child6-box2{
+				display:flex;
+				flex-direction:row;
+				justify-content:space-around;
+			}
+			.child6-box3{
+				display:flex;
+				flex-direction:row;
+				justify-content:space-around;
+			}
+			/*.box2{
+				width: 100px;
+				display: flex;
+				background: gray;
+			}
+			.box2_child1 {
+				flex: 1;
+				width: 20px;
+				background: red;
+				height: 100px;
+			}
+			.box2_child2 {
+				flex: 2;
+				width: 40px;
+				background: yellow;
+				height: 100px;
+			}
+			.box2_child3 {
+				flex: 2 3;
+				height: 100px;
+				background: green;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<ul class="box">
+				<li class="child child1">
+					<div class="round"></div>
+				</li>
+				<li class="child child2">
+					<div class="child2-box1">
+						<div class="round"></div>					
+					</div>
+					<div class="child2-box2">
+						<div class="round"></div>					
+					</div>
+				</li>
+				<li class="child child3">
+					<div class="child3_box1">
+						<div class="round"></div>
+					</div>
+					<div class="child3_box2">
+						<div class="round"></div>
+					</div>
+					<div class="child3_box3">
+						<div class="round"></div>
+					</div>
+				</li>
+				<li class="child child4">
+					<div class="child4-box1">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+					<div class="child4-box2">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+				</li>
+				<li class="child child5">
+					<div class="child5-box1">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+					<div class="child5-box2">
+						<div class="round"></div>						
+					</div>
+					<div class="child5-box3">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+				</li>
+				<li class="child child6">
+					<div class="child6-box1">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+					<div class="child6-box2">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+					<div class="child6-box3">
+						<div class="round"></div>
+						<div class="round"></div>
+					</div>
+				</li>
+			</ul>
+			
+			<!--<ul class="box2">
+				<li class="box2_child1">1</li>
+				<li class="box2_child2">2</li>
+				<li class="box2_child3">3</li>
+			</ul>-->
+		</div>
+	</body>
+</html>
