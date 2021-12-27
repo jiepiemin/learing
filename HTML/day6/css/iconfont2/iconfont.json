@@ -1,0 +1,58 @@
+{
+  "id": "3067615",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1455792",
+      "name": "wealth",
+      "font_class": "wodecaifu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "2076312",
+      "name": " 我的",
+      "font_class": "wode",
+      "unicode": "e8a0",
+      "unicode_decimal": 59552
+    },
+    {
+      "icon_id": "2154057",
+      "name": "Tab_发现",
+      "font_class": "faxianweixuanzhongxuanzhong",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "2170932",
+      "name": "首页-首页",
+      "font_class": "shouye-shouye",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3457210",
+      "name": "提醒",
+      "font_class": "tixing",
+      "unicode": "e716",
+      "unicode_decimal": 59158
+    },
+    {
+      "icon_id": "4157679",
+      "name": "发现",
+      "font_class": "Shapecopy",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "16323020",
+      "name": "公交",
+      "font_class": "gongjiao",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    }
+  ]
+}

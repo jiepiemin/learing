@@ -1,0 +1,37 @@
+{
+  "id": "3064651",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6364167",
+      "name": "二维码",
+      "font_class": "ico",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "18406322",
+      "name": "扫一扫",
+      "font_class": "saoyisao",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "18657955",
+      "name": "收款码",
+      "font_class": "shoukuanma",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "18894043",
+      "name": "银行卡管理",
+      "font_class": "yinhangkaguanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

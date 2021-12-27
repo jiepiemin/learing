@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+		<style>
+			input[type="password"],input[type="text"] {
+				height: 14px;
+				line-height: 24px;
+				border: 1px solid #dcdfe6;
+				padding: 5px 10px;
+			}
+			input:hover {
+				border-color: #c0c4cc
+			}
+			input:focus{
+		        border-color: #dcdfe6;
+		        outline: none;
+		    }
+		    
+		    input[type=radio] {  
+			 	width: 14px;  
+				 height: 14px;  
+				 position: relative;  
+				 background: green;  
+			 }  
+		   	input[type=radio]::after {  
+				 position: absolute;  
+				 top: 0;  
+				 color: #000;  
+				 width: 14px;  
+				 height: 14px;  
+				 padding-left: 0px;  
+				 text-align: center;  
+				 content: 'X';  
+				 border-radius: 7px;  
+		 	}  
+		   	input[type=checkbox]:checked::after {  
+			 	content: "✓";  
+				 color: #fff;  
+				 font-size: 10px;  
+				 line-height: 14px;  
+				 background-color: green;  
+		 	} 
+		</style>
+	</head>	
+	<style>		
+	</style>
+	<body>
+		<form>
+			<table align="center" bgcolor="aqua" >
+				<tr>
+					<th  bgcolor="blue" colspan="2">欢迎注册</th>
+				</tr>
+				<tr>
+					<th style="width:150px;text-align:right;">用户名:</th>
+					<th style="text-align:left;">
+						<input type="text" id="user" placeholder="请输入"/>
+					</th>
+				</tr>
+				<tr>
+					<th style="text-align:right;">密码:</th>
+					<th style="text-align:left;">
+						<input type="password" id="user" />
+					</th>
+				</tr>
+				<tr>
+					<th style="text-align:right;">性别:</th>
+					<th style="text-align:left;">
+						<input type="radio" name="sex" id="man" />
+						<label for="man">男</label>
+						<input type="radio" name="sex" id="women" />
+						<label for="women">女</label></br>
+					</th>
+				</tr>
+				<tr>
+					<th style="text-align:right;">电话:</th>
+					<th style="text-align:left;">
+						<input type="text" id="user" />
+					</th>
+				</tr>
+				<tr>
+					<th style="text-align:right;">职业:</th>
+					<th style="text-align:left;">
+						<select>
+							<option>请选择</option>
+							<option>学生</option>
+							<option>白领</option>
+							<option>教师</option>
+						</select>
+					</th></br>					
+				</tr>
+				<tr>
+					<th style="text-align:right;">爱好:</th>
+					<th style="text-align:left;">
+						<input type="checkbox"  id="打游戏" />
+						<label for="打游戏">打游戏</label>
+						<input type="checkbox"  id="运动" />
+						<label for="运动">运动</label>
+						<input type="checkbox"  id="打篮球" />
+						<label for="打篮球">打篮球</label>
+						<input type="checkbox" id="追剧" />
+						<label for="追剧">追剧</label></br>
+					</th>
+				</tr>
+				<tr>
+					<th style="text-align:right;">地址:</th>
+					<th style="text-align:left;">
+						<textarea  rows="3"></textarea>
+					</th>
+				</tr>
+				<tr>
+					<th  bgcolor="blue" colspan="2">填写完成后点击下面的链接提交</th>
+				</tr>
+				<tr>
+					<th  colspan="2">
+						<input type="submit" />
+						<input type="reset" />
+					</th>					
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

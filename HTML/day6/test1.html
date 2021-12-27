@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width = device-width， initial-scale = 1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../day5/css/reset.css" />
+		<link rel="stylesheet" href="./css/iconfont/iconfont.css">
+		<link rel="stylesheet" href="./css/iconfont2/iconfont.css">
+	</head>
+	<script>
+    function autoResizeDev() {
+        var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        var htmlDom = document.getElementsByTagName('html')[0];
+        //判断pc、移动端
+        htmlWidth > 750 ? htmlDom.style.fontSize = '100px' : htmlDom.style.fontSize = 100 * (htmlWidth / 750) +
+            'px';
+    }
+    autoResizeDev();
+    window.onresize = autoResizeDev;
+    // 获取宽度
+    window.HtmlWidth = 0;
+	  window.onload = function() {
+	  	window.HtmlWidth = document.body.clientWidth || document.documentElement.clientWidth;
+	  }
+        
+  
+</script>
+	<style>
+		/*html {
+				font-size: 750px;
+			}*/
+	/*[class*="col-"] {
+	  width: 100%;
+	}
+
+	@media(max-width: 750px) {
+	  /*  */
+	  /*.col-1 {width: 8.33%;}
+	  .col-2 {width: 16.66%;}
+	  .col-3 {width: 25%;}
+	  .col-4 {width: 33.33%;}
+	  .col-5 {width: 41.66%;}
+	  .col-6 {width: 50%;}
+	  .col-7 {width: 58.33%;}
+	  .col-8 {width: 66.66%;}
+	  .col-9 {width: 75%;}
+	  .col-10 {width: 83.33%;}
+	  .col-11 {width: 91.66%;}
+	  .col-12 {width: 100%;}
+	}**/
+		.box{
+			width:100%;			
+		}
+		.center{
+			width:6.8rem;
+			margin:0 auto;
+		}
+		header{
+			background:#e75e51;
+			height:3.22rem;
+		}
+		select{
+			border: .02rem solid transparent;
+			color:white;
+			font-size:.24rem;
+			padding: .18rem 0;			
+			background:#e75e51;
+		}
+		.header_1{
+			display:flex;
+			height:.9rem;
+			justify-content:space-around;
+			align-items: center;			
+		}
+		.shurukuang{
+			width:4.64rem;
+			height:.72rem;
+			line-height:.72rem;
+			background:white;
+			border-radius:.08rem;
+			display:flex;
+		}
+		.shurukuang p:first-child{
+			display:flex;
+			width:.6rem;
+			height:.72rem;
+			color:#CBCBCB;
+			font-size:.32rem;
+			justify-content: center;			
+		}
+		.shurukuang p:last-child{
+			color:#CBCBCB;
+			font-size:.24rem;
+		}
+		.header_1 i{
+			display:flex;
+			font-size:.42rem;
+			width:.38rem;
+			height:.72rem;
+			color:white;
+			justify-content:center;
+			align-items:center;
+		}
+		header ul {
+			display: flex;
+			height:2.32rem;
+			justify-content: space-around;
+			align-items: center;
+			background: #e76053;
+		}
+		header ul li {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+		header ul li i {
+			width: .84rem;
+			height: .84rem;
+			border-radius: 50%;
+			background: #FFFFFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #d9362e;
+			font-size: .36rem !important;
+		}
+		header ul li span {
+			font-size:.26rem;
+			line-height: .78rem;
+			display: block;
+			color: #FFFFFF;			
+		}
+		nav{
+			display:flex;
+			height:3.5rem;
+		}
+		nav ul{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+			align-items:center;
+		}
+		nav ul li{
+			display: flex;
+			width: 1.5rem;			
+			flex-direction: column;
+			align-items: center;
+		}
+		nav ul li i{
+			width: .84rem;
+			height: .84rem;
+			border-radius: 50%;
+			background: #FFF2F2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #d9362e;
+			font-size: .46rem !important;
+		}
+		nav ul li span{
+			font-size:.24rem;
+			color:#333333;
+		}
+		main{
+			display:flex;			
+			height:2rem;
+			justify-content: center;
+		}
+		section h3{
+			
+			font-size:.28rem;
+			width:6.8rem;
+			line-height:.72rem;
+			font-weight: 600;
+			text-align:left;
+			
+		}
+		section ul{
+			display:flex;
+			height:2.18rem;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			align-content: space-between;
+		}
+		section ul li{
+			display:flex;
+			height:.98rem;
+			width:50%;
+		}
+		section p:first-child{
+			font-size:.23rem;
+			font-weight: 600;
+			color:#333333;
+		}
+		section p:last-child{
+			font-size:.2rem;			
+			color:#666666;
+		}
+		.center1{
+			display:flex;
+			margin-left:.2rem;
+			text-align: left;
+			flex-direction:column;
+		    justify-content: center;
+		}
+		footer{
+			height:1.18rem;
+			display:flex;
+			
+		}
+		footer ul{	
+			width:100%;		
+			display:flex;
+			align-items: end;
+			justify-content: space-around;			
+		}
+		footer ul li{			
+			display:flex;
+			flex-direction: column;
+			align-content: end ;			
+		}
+		footer ul li {
+			font-size:.42rem!important;
+			color:#A8A8A8;
+		}
+		footer ul li p{
+			font-size:.24rem;
+			color:#A8A8A8;
+		}
+		footer ul li:hover p,footer ul li:hover i{
+			color:#EC1820 !important;
+		}
+		
+	</style>
+	<body>
+		<div class="box">
+			<header>
+			<div class="header_1">
+				<form>
+					<select>
+						<option>杭州市</option>
+						<option>上海市</option>
+						<option>南京市</option>
+						<option>赣州市</option>
+					</select>
+				</form>
+				<div class="shurukuang">
+					<p class="iconfont  icon-faxianweixuanzhongxuanzhong"></p>
+					<p>品牌、门店、商品、应用</p>
+				</div>
+				<i class="iconfont icon-tixing"></i>
+			</div>
+				<ul>
+					<li>
+						<i class="iconfont icon-ico"></i>
+						<span> 付款码</span>
+					</li>
+					<li>
+						<i class="iconfont icon-shoukuanma"></i>
+						<span>收款码</span>
+					</li>
+					<li>
+						<i class="iconfont icon-saoyisao"></i>
+						<span> 扫一扫</span>
+					</li>
+					<li>
+						<i class="iconfont icon-yinhangkaguanli"></i>
+						<span> 卡管理</span>
+					</li>
+				</ul>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<i class="iconfont icon-ico"></i>
+						<span>坐公交</span>
+					</li>
+					<li>
+						<i class="iconfont icon-shoukuanma"></i>
+						<span>乘地铁</span>
+					</li>
+					<li>
+						<i class="iconfont icon-saoyisao"></i>
+						<span>转账</span>
+					</li>
+					<li>
+						<i class="iconfont icon-yinhangkaguanli"></i>
+						<span>信用卡还款</span>
+					</li>
+					<li>
+						<i class="iconfont icon-ico"></i>
+						<span>手机充值</span>
+					</li>
+					<li>
+						<i class="iconfont icon-shoukuanma"></i>
+						<span>收款码</span>
+					</li>
+					<li>
+						<i class="iconfont icon-saoyisao"></i>
+						<span> 扫一扫</span>
+					</li>
+					<li>
+						<i class="iconfont icon-yinhangkaguanli"></i>
+						<span> 卡管理</span>
+					</li>
+					<li>
+						<i class="iconfont icon-saoyisao"></i>
+						<span> 扫一扫</span>
+					</li>
+					<li>
+						<i class="iconfont icon-yinhangkaguanli"></i>
+						<span> 卡管理</span>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<img src="images/4_09.jpg" />
+			</main>
+			<section>
+				<div class="center">
+					<h3>热门推荐</h3>
+					<ul>
+						<li>
+							<img src="images/5_12.jpg" />
+							<div class="center1">
+								<p>奖励中心</p>
+								<p>本地优惠享不停</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/5_12.jpg" />
+							<div class="center1">
+								<p>内蒙古味道 战疫情</p>
+								<p>为宅家的你热心推荐</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/5_12.jpg" />
+							<div class="center1">
+								<p>抗击新冠肺炎</p>
+								<p>云闪付助力健康</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/5_12.jpg" />
+							<div class="center1">
+								<p>还款0手续费</p>
+								<p>还款压力更小了</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<footer>
+				<ul>
+					<li>
+						<i class="iconfont icon-shouye-shouye"></i>
+						<p>首页</p>						
+					</li>
+					<li>
+						<i class="iconfont icon-Shapecopy"></i> 
+						<p>发现</p>						
+					</li>					
+					<li>
+						<i class="iconfont icon-wodecaifu"></i> 
+						<p>财富</p>						
+					</li>
+					<li>
+						<i class="iconfont icon-wode"></i>
+						<p>我的</p>						
+					</li>
+			</footer>
+		</div>
+	</body>	
+</html>
